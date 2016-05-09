@@ -9,25 +9,11 @@ namespace SieveOfEratosthenes
 {
     public class SieveOfEratosthenes : Interface.IFindPrimesInList
     {
-        private List<int> _numbersList;
+        public List<int> _numbersList;
 
-        /// <summary>
-        /// Create a list of values to find the primes in the range.
-        /// </summary>
-        /// <param name="from">Starting value</param>
-        /// <param name="to">Ending value</param>
-        public SieveOfEratosthenes(int from, int to)
+        public SieveOfEratosthenes()
         {
-            PopulateList(from, to);
-        }
 
-        /// <summary>
-        /// Create a list of values to find the primes from 2 till the specified number.
-        /// </summary>
-        /// <param name="to">Ending value.</param>
-        public SieveOfEratosthenes(int to)
-        {
-            PopulateList(0, to);
         }
 
         /// <summary>
@@ -35,7 +21,7 @@ namespace SieveOfEratosthenes
         /// </summary>
         /// <param name="from">Starting value</param>
         /// <param name="to">Ending value</param>
-        public void PopulateList(int from, int to)
+        public virtual int PopulateList(int from, int to)
         {
             if (from >= to)
                 throw new RangeInvalidException("Begin value is equal to or more than End value");
@@ -45,6 +31,7 @@ namespace SieveOfEratosthenes
             {
                 _numbersList.Add(i);
             }
+            return _numbersList.Count;
         }
         
         /// <summary>

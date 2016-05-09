@@ -8,7 +8,7 @@ namespace SieveOfEratosthenes.Interface
 {
     public interface IFindPrimesInList
     {
-        void PopulateList(int from, int to);
+        int PopulateList(int from, int to);
         List<int> FindPrimes();
     }
 }

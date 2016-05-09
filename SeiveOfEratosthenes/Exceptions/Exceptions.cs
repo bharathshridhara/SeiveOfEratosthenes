@@ -8,7 +8,7 @@ using System.Text;
 namespace SieveOfEratosthenes.Exceptions
 {
     [Serializable]
-    internal class RangeInvalidException : Exception
+    public class RangeInvalidException : Exception
     {
         public RangeInvalidException()
         {
@@ -28,7 +28,7 @@ namespace SieveOfEratosthenes.Exceptions
     }
 
     [Serializable]
-    internal class ListEmptyException : Exception
+    public class ListEmptyException : Exception
     {
         public ListEmptyException()
         {
