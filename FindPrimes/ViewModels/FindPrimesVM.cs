@@ -7,6 +7,8 @@ using SieveOfEratosthenes;
 using FindPrimes.Services;
 using FindPrimes.Models;
 using FindPrimes.Base;
+using System.Resources;
+using System.Reflection;
 
 namespace FindPrimes.ViewModels
 {
@@ -140,9 +142,9 @@ namespace FindPrimes.ViewModels
 
         private void FillErrorMessage()
         {
-            ErrorMessage = "Begin range should be less than End range";
+            ErrorMessage = (new ResourceManager("FindPrimes.Properties.Resources",
+                Assembly.GetExecutingAssembly()).GetString("ERROR_RANGE_INVALID"));
         }
-
-
+        
     }
 }

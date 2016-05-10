@@ -4,6 +4,17 @@
              xmlns:local="clr-namespace:FindPrimes"
              StartupUri="Views/MainWindow.xaml">
     <Application.Resources>
-         
+        <Style TargetType="Label">
+            <Style.Setters>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+            </Style.Setters>
+        </Style>
+        <Style TargetType="Button">
+            <Style.Setters>
+                <Setter Property="VerticalAlignment" Value="Top"/>
+                <Setter Property="Margin" Value="10, 0, 0, 10" />
+                <Setter Property="Height" Value="30" />
+            </Style.Setters>
+        </Style>
     </Application.Resources>
 </Application>
