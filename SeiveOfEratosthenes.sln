@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeiveOfEratosthenes", "Seiv
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeiveOfEratosthenesTests", "SeiveOfEratosthenesTests\SeiveOfEratosthenesTests.csproj", "{EF791C5B-953A-4C05-AD36-F18ED741F643}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindPrimes", "FindPrimes\FindPrimes.csproj", "{4ED6B02B-B55F-4875-A405-3D49BB13F21D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{EF791C5B-953A-4C05-AD36-F18ED741F643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF791C5B-953A-4C05-AD36-F18ED741F643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EF791C5B-953A-4C05-AD36-F18ED741F643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4ED6B02B-B55F-4875-A405-3D49BB13F21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4ED6B02B-B55F-4875-A405-3D49BB13F21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4ED6B02B-B55F-4875-A405-3D49BB13F21D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4ED6B02B-B55F-4875-A405-3D49BB13F21D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
